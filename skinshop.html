@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>피부관리샵</title>
+  <style>
+@font-face {
+    font-family: 'KBIZHanmaumMyungjo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body {
+      font-family: 'KBIZHanmaumMyungjo', sans-serif;
+      margin: 0;
+      background-color: #fff7f7;
+      color: #023535;
+    }
+    header {
+      background-color: #55acac;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      background-color: #f4ccd4;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .service {
+      background-color: white;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ffe4e9;
+      margin-top: 20px;
+    }
+    button, .kakao-btn {
+      background-color: #ff85a2;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    button:hover, .kakao-btn:hover {
+      background-color: #ff6d8c;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>퀸헤어피부사랑</h1>
+    <p>당신의 피부를 위한 최고의 케어</p>
+  </header>
+
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#services">서비스</a>
+    <a href="#reservation">예약</a>
+    <a href="#contact">연락/위치</a>
+  </nav>
+
+  <section id="about">
+    <h2>샵 소개</h2>
+    <p>저희 피부관리샵은 최상의 제품과 전문적인 기술로 고객님의 피부 건강을 책임집니다.  
+    편안한 분위기 속에서 힐링과 아름다움을 동시에 느껴보세요.</p>
+  </section>
+
+  <section id="services">
+    <h2>서비스 안내</h2>
+    <div class="service">
+      <h3>베이직 케어</h3>
+      <p>기본적인 피부 클렌징과 수분 공급을 통해 피부를 촉촉하게 유지합니다.</p>
+      <img src="happy.jpg" alt="베이직 케어 시술" width="400" style="margin-top:10px; border-radius:10px;">
+    </div>
+    <div class="service">
+      <h3>프리미엄 케어</h3>
+      <p>고급 앰플과 마사지를 통한 피부 재생 및 탄력 강화.</p>
+    </div>
+    <div class="service">
+      <h3>여드름 케어</h3>
+      <p>피부 진정과 트러블 완화에 효과적인 관리 프로그램.</p>
+    </div>
+  </section>
+
+  <section id="reservation">
+    <h2>예약하기</h2>
+    <form action="https://formspree.io/f/mnqepklo" method="POST">
+      <input type="text" name="name" placeholder="이름" required>
+      <input type="tel" name="phone" placeholder="전화번호" required>
+      <textarea name="message" placeholder="원하는 날짜와 시간" required></textarea>
+      <button type="submit">예약하기</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>연락 & 위치</h2>
+    <p><strong>주소:</strong> 서울특별시 금천구 독산동 1065-50번지 2층</p>
+    <a href="https://open.kakao.com/o/somechatlink" target="_blank" class="kakao-btn">💬 카카오톡 상담하기</a>
+    <h3>지도 보기</h3>
+    <iframe src="https://www.google.com/maps?q=서울특별시+금천구+독산동+1065-50번지&output=embed"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 아름다운 피부관리샵. 모든 권리 보유.</p>
+  </footer>
+</body>
+</html>
